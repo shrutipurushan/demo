@@ -4,18 +4,125 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
+        <title>My site</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <style>
+            #main{
+                background-color:#F57878;
+                
+            }
+            #na{
+                max-width: 600px;
+                margin: 10px auto;
+                
+                
+            }
+            .mybutton{
+                max-width: 200px;
+                margin: 0 auto;
+            }
+            
+            textarea { resize:vertical;}   
+        </style>
     </head>
     <body>
-        <div>new Content</div>
-        <h1>This is a test demo</h1></body>
-        <h2>header</h2>
-        <h4>hello</h4>
-        <h3>world</h3>
-        <h4>test</h4>
-        <p>test</p>
+        <div class="container">
+            <div class="jumbotron" id="main">
+                <h1 class="text-center"> Welcome to my html site</h1>
+            </div>
+            <div id="na" >
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name<span class="glyphicon glyphicon-user"></span></label> 
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email<span class="glyphicon glyphicon-envelope"></span></label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender" class="col-sm-2 control-label">Gender</label>
+                        <div class="col-sm-6">
+                            <label class="radio-inline"><input type="radio" name="sex" checked>Male</label>
+                            <label class="radio-inline"><input type="radio" name="sex">Female</label>
+                       </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="col-sm-2 control-label">Address</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" rows="4"  id="address" placeholder="Address"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender" class="col-sm-2 control-label">My choice</label>
+                        <div class="checkbox">
+                            <div class="col-sm-6">   
+                                <label>
+                                    <input type="checkbox" name="pizza" value="pizza"> Pizza
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="burger" value="burger"> Burger
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="coke" value="coke"> Coke
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <div class="mybutton">
+                             <button type="submit" class="btn btn-success" class="text-center">Submit<span class="glyphicon glyphicon-check"></span></button>
+                             <button type="reset" class="btn btn-danger">Reset<span class="glyphicon glyphicon-remove"></span></button>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
+
+                     
+                      
+                      
+                       
+                      
+                     
+                           
+          
+                        
+
+           
+                        
+                        
+                       
+                        
+                      
+                       
+                       
+                       
+                        
+                        
+                 
+               
+           
+       
+
+    
